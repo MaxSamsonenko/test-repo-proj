@@ -1,0 +1,119 @@
+.mobile-menu-btn {
+  margin-left: auto;
+  background-color: transparent;
+}
+@media screen and (min-width: 767px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-background);
+  display: flex;
+  flex-direction: column;
+  padding: 80px 35px 40px 40px;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+@media screen and(min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+.menu-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--accent);
+  padding: 0;
+  transition: background-color var(--transition-animation),
+    border var(--transition-animation);
+}
+.menu-close-btn:focus {
+  background-color: var(--pressed-state);
+  border: none;
+}
+.mobile-nav-link {
+  color: var(--dark-accent);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.mobile-nav-link-studio {
+  color: var(--pressed-state);
+}
+.mobile-nav-link:focus {
+  color: var(--pressed-state);
+}
+.contacts-socials-wrapper {
+  margin-top: auto;
+}
+.mobile-menu-list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-menu-contacts {
+  margin-bottom: 48px;
+}
+.mobile-contacts-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-contact-tel {
+  color: var(--primary-brand);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.mobile-contact-email {
+  color: var(--text-primary);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+.mobile-menu-socials {
+  display: flex;
+  justify-content: flex-start;
+  gap: 56px;
+}
+.mobile-menu-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-brand);
+}
+.mobile-menu-socials-icon {
+  fill: rgba(244, 244, 253, 1);
+}
+@media screen and (min-width: 320px) and (max-width: 428px) {
+  .mobile-contact-tel {
+    font-size: 24px;
+  }
+  .mobile-menu-socials {
+    gap: 24px;
+  }
+}

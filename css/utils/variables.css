@@ -1,0 +1,17 @@
+:root {
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  /* navy blue */
+  --dark-accent: #2e2f42;
+  --success: #31d0aa;
+  --text-primary: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light-accent: #f4f4fd;
+  --modal-overlay: #2e2f42;
+  --hero-background: #2e2f42;
+  --white-background: #ffffff;
+  --modal-background: #fcfcfc;
+  /* =========================== ANIMATION ================= */
+  --transition-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
